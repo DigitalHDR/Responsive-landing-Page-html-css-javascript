@@ -18,8 +18,13 @@ body {
 }
 
 html {
-    background: url(./bg.jpg)no-repeat center center fixed;
-    background-size: cover;
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #72dffe;
+    /* background: url(./bg.jpg)no-repeat center center fixed;
+    background-size: cover; */
 }
 
 .header {
@@ -110,10 +115,8 @@ label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
 }
-
-
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .main {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -159,7 +162,7 @@ label span:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 200px;
+    margin: 250px 0px 0px 0px;
 }
 
 .footer ul {
@@ -187,6 +190,10 @@ label span:nth-child(3) {
 }
 
 @media (max-width: 950px) {
+    html {
+        background-size: 1200px;
+    }
+
     body {
         padding: 0px 60px;
     }
@@ -207,7 +214,7 @@ label span:nth-child(3) {
     }
 
     .main .btn {
-        margin: 50px auto;
+        margin: 200px auto 0px;
         display: flex;
     }
     
